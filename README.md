@@ -1,17 +1,50 @@
 
-# News & Payout Dashboard
+# 📰 News & Payout Dashboard – Sportsdunia Assignment
 
-## Setup Instructions
+A responsive, full-stack sports news dashboard with role-based access, article filtering, dark mode, offline support, and payout calculator.
 
-1. Clone or unzip the project
-2. Run `npm install`
-3. Create `.env.local` in the root directory with:
-```
-NEXT_PUBLIC_NEWS_API_KEY=your_newsapi_key_here
-NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-NEXT_PUBLIC_FIREBASE_APP_ID=your_firebase_app_id
-```
+---
 
-4. Run `npm run dev` to start the dev server
+## 🔥 Features Implemented
+
+### ✅ User Authentication
+- Email/password login + Google OAuth
+- Role-based access (Admin / Normal User)
+- Logout functionality
+
+### ✅ News & Blog Data Integration
+- Fetching articles via free news API
+- Article listing with date, type, and title
+
+### ✅ Responsive UI
+- Fully mobile-friendly design
+- Dark mode toggle
+
+### ✅ Admin-Only Payout Calculator
+- Add article/blog entries
+- Set payout rates
+- Auto-calculate total payout
+- Save in localStorage
+
+### ✅ Export Reports
+- Export data as CSV
+- Offline fallback with localStorage
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend:** React.js, Next.js
+- **Authentication:** Firebase Auth
+- **Database & Roles:** Firebase Firestore (optional)
+- **Styling:** CSS Modules
+- **State Management:** useState, useEffect, Context
+- **Exports:** `papaparse`, `file-saver`
+
+
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+```bash
+git clone https://github.com/USERNAME/REPO_NAME.git
