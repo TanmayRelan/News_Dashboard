@@ -1,0 +1,117 @@
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://source.unsplash.com/1600x900/?newspaper,news");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3) blur(2px);
+  z-index: 0;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #111827;
+  font-family: 'Merriweather', serif;
+}
+
+.subheading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #f8fafc;
+  color: #111827;
+}
+
+.button {
+  padding: 0.75rem;
+  background-color: #1e40af;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+}
+
+.googleButton {
+  padding: 0.75rem;
+  background-color: #ef4444;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.googleButton:hover {
+  background-color: #b91c1c;
+}
+
+.divider {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 1rem;
+}
+
+.toggleText {
+  font-size: 0.85rem;
+  color: #1e293b;
+}
+
+.link {
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
